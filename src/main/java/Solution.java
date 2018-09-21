@@ -1,9 +1,8 @@
-import strings.ValidAnagram;
-import strings.ValidPalindrome;
+import array.ContainsDuplicate;
 
 public class Solution {
     public static void main(String[] args) {
-        String s = "A man, a plan, a canal: Panama";
-        System.out.println(new ValidPalindrome().isPalindrome(s));
+        int[] nums = {2,14,18,22,22};
+        System.out.println(new ContainsDuplicate().containsDuplicate(nums));
     }
 }
