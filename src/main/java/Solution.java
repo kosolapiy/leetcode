@@ -1,8 +1,8 @@
-import array.ContainsDuplicate;
+import array.SingleNumber;
 
 public class Solution {
     public static void main(String[] args) {
-        int[] nums = {2,14,18,22,22};
-        System.out.println(new ContainsDuplicate().containsDuplicate(nums));
+        int[] nums = {4,1,2,1,2};
+        System.out.println(new SingleNumber().singleNumber(nums));
     }
 }
