@@ -1,9 +1,19 @@
 package strings;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+/**
+ * @author Mikhail Pavlenko
+ * <p>
+ * Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+ * Note: For the purpose of this problem, we define empty string as valid palindrome.
+ * <p>
+ * Example 1:
+ * Input: "A man, a plan, a canal: Panama"
+ * Output: true
+ * <p>
+ * Example 2:
+ * Input: "race a car"
+ * Output: false
+ */
 
 public class ValidPalindrome {
     public boolean isPalindrome(String s) {
@@ -13,10 +23,11 @@ public class ValidPalindrome {
 
         s = s.toLowerCase();
 
-        StringBuilder new_s = new StringBuilder("");
+        StringBuilder new_s = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
+//            if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
+            if (Character.isLetterOrDigit(c)) {
                 new_s.append(c);
             }
         }
